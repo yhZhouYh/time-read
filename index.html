@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>时代书房</title>
+  <script>
+  var deviceWidth = document.documentElement.clientWidth; if (deviceWidth > 750) deviceWidth = 750; document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+  </script>
+  <link rel="manifest" href="./static/manifest.json">
+  <meta name="theme-color" content="#4DBA87">
+
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="时代书房">
+  <link rel="apple-touch-icon" href="./static/logo2.png">
+  <!-- Add to home screen for Windows -->
+  <meta name="msapplication-TileImage" content="./static/logo2.png">
+  <meta name="msapplication-TileColor" content="#000000">
+
+  
+</head>
+  
+<body>
+  <noscript>
+    This is your fallback content in case JavaScript fails to load.
+  </noscript>
+  <div id="app"></div>
+  <!-- <script src="//at.alicdn.com/t/font_391530_374zwdiya6wuq5mi.js"></script> -->
+  <!-- Todo: only include in production -->
+  <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

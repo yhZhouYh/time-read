@@ -1,0 +1,57 @@
+@import "fn";
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+  }
+
+body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+    font-family: @weuiFontDefault;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    .setTapColor();
+}
+
+audio,
+img,
+svg,
+object,
+embed,
+canvas,
+video,
+iframe {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle;
+
+  &:not(.md-image) {
+    height: auto;
+  }
+}
